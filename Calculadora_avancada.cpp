@@ -4,12 +4,6 @@
 #include<stdlib.h>
 #include <string.h>
 
-float soma(float s1, float s2){
-	float resultado;
-	resultado = s1 + s2;
-	return resultado;
-}
-
 main(){
 	setlocale(LC_ALL,"portuguese");	
 	int saida1;
@@ -23,24 +17,19 @@ main(){
 		n1=0;
 		n2=0;
 		printf("********************************************************************************\n");
-		printf("****ATEN«√O SE A OPERA«√O FOR INV¡LIDA O PROGRAMA IR¡ FECHAR AUTOMATICAMENTE****\n");
+		printf("****ATEN√á√ÉO SE A OPERA√á√ÉO FOR INV√ÅLIDA O PROGRAMA IR√Å FECHAR AUTOMATICAMENTE****\n");
 		printf("********************************************************************************");
 		if(cont!=0){
-			printf("\n\nO RESULTADO DA OPERA«√O ANTERIOR FOI: %.2lf\n", r);
+			printf("\n\nO RESULTADO DA OPERA√á√ÉO ANTERIOR FOI: %.2lf\n", r);
 		}
-		printf("\n\nCALCULADORA\nComandos:\nSoma = '+'\nSubtraÁ„o = '-'\nMultiplicaÁ„o = '*' \nDivis„o = '/'\nPorcentagem = '%%' \nExponencial = '^'\nLogaritmo = 'l'\nRaÌz quadrada = 'v'");
-		printf("\n\nDigite o primeiro n˙mero, a operaÁ„o e logo depois o segundo n˙mero\n\n");	
+		printf("\n\nCALCULADORA\nComandos:\nSoma = '+'\nSubtra√ß√£o = '-'\nMultiplica√ß√£o = '*' \nDivis√£o = '/'\nPorcentagem = '%%' \nExponencial = '^'\nLogaritmo = 'l'\nRa√≠z quadrada = 'v'");
+		printf("\n\nDigite o primeiro n√∫mero, a opera√ß√£o e logo depois o segundo n√∫mero\n\n");	
 		scanf("%f %c %f", &n1, &operador, &n2);
 		switch(operador){
 			
-				case '+':
-					r = soma(n1,n2);
-					printf("\n%.2f", r);
-					break;	
-			
 		}
 	
-			printf("\nSe deseja continuar na calculadora digite 0\nSe n„o qualquer n˙mero:\n");
+			printf("\nSe deseja continuar na calculadora digite 0\nSe n√£o qualquer n√∫mero:\n");
     		fflush(stdin);
 			gets(saida);
 			if(strcmp(saida,zero)){

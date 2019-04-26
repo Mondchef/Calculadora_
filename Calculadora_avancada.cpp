@@ -4,6 +4,13 @@
 #include<stdlib.h>
 #include <string.h>
 
+float divisao(float d1, float d2){
+	float resultado;
+	resultado = d1 / d2;
+	return resultado;
+}
+
+
 main(){
 	setlocale(LC_ALL,"portuguese");	
 	int saida1;
@@ -26,7 +33,15 @@ main(){
 		printf("\n\nDigite o primeiro número, a operação e logo depois o segundo número\n\n");	
 		scanf("%f %c %f", &n1, &operador, &n2);
 		switch(operador){
-			
+			case '/':
+  	 			if(n2==0){
+  	 	 			printf("O resultado é indefinido");
+				}
+					else{
+    				r = divisao(n1,n2);
+    				printf("\n%.2f", r);
+    				break;
+    			}
 		}
 	
 			printf("\nSe deseja continuar na calculadora digite 0\nSe não qualquer número:\n");

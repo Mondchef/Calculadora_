@@ -3,18 +3,12 @@
 #include<math.h>
 #include<stdlib.h>
 #include <string.h>
-float soma(float s1, float s2){
+
+float exponencial(float q1, float q2){
 	float resultado;
-	resultado = s1 + s2;
+	resultado = pow(q1,q2);
 	return resultado;
 }
-
-float raiz(float r1, float r2){
-	float resultado;
-	resultado = pow(r1, 1/r2);
-	return resultado;
-}
-
 main(){
 	setlocale(LC_ALL,"portuguese");	
 	int saida1;
@@ -37,21 +31,14 @@ main(){
 		printf("\n\nDigite o primeiro número, a operação e logo depois o segundo número\n\n");	
 		scanf("%f %c %f", &n1, &operador, &n2);
 		switch(operador){
-				case '+':
-					r = soma(n1,n2);
-					printf("\n%.2f", r);
-					break;
-			
-				case 'v':
-    				r = raiz(n1,n2);
-    				printf("\n%.2f", r);
-    				break;
-    			case 'V':
-    				r = raiz(n1,n2);
+
+    				
+    			case '^':
+    				r = exponencial(n1,n2);
     				printf("\n%.2f", r);
     				break;
 			
-		}
+			}
 	
 			printf("\nSe deseja continuar na calculadora digite 0\nSe não qualquer número:\n");
     		fflush(stdin);

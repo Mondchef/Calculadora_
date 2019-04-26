@@ -3,7 +3,11 @@
 #include<math.h>
 #include<stdlib.h>
 #include <string.h>
-
+float multiplicacao(float m1, float m2){
+	float resultado;
+	resultado = m1 * m2;
+	return resultado;
+}
 main(){
 	setlocale(LC_ALL,"portuguese");	
 	int saida1;
@@ -26,7 +30,10 @@ main(){
 		printf("\n\nDigite o primeiro número, a operação e logo depois o segundo número\n\n");	
 		scanf("%f %c %f", &n1, &operador, &n2);
 		switch(operador){
-			
+			case '*':
+    			r = multiplicacao(n1,n2);
+    			printf("\n%.2f", r);
+    			break;
 		}
 	
 			printf("\nSe deseja continuar na calculadora digite 0\nSe não qualquer número:\n");

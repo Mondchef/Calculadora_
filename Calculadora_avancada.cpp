@@ -17,19 +17,19 @@ main(){
 		n1=0;
 		n2=0;
 		printf("********************************************************************************\n");
-		printf("****ATEN√á√ÉO SE A OPERA√á√ÉO FOR INV√ÅLIDA O PROGRAMA IR√Å FECHAR AUTOMATICAMENTE****\n");
+		printf("****ATEN«√O SE A OPERA«√O FOR INV¡LIDA O PROGRAMA IR¡ FECHAR AUTOMATICAMENTE****\n");
 		printf("********************************************************************************");
 		if(cont!=0){
-			printf("\n\nO RESULTADO DA OPERA√á√ÉO ANTERIOR FOI: %.2lf\n", r);
+			printf("\n\nO RESULTADO DA OPERA«√O ANTERIOR FOI: %.2lf\n", r);
 		}
-		printf("\n\nCALCULADORA\nComandos:\nSoma = '+'\nSubtra√ß√£o = '-'\nMultiplica√ß√£o = '*' \nDivis√£o = '/'\nPorcentagem = '%%' \nExponencial = '^'\nLogaritmo = 'l'\nRa√≠z quadrada = 'v'");
-		printf("\n\nDigite o primeiro n√∫mero, a opera√ß√£o e logo depois o segundo n√∫mero\n\n");	
+		printf("\n\nCALCULADORA\nComandos:\nSoma = '+'\nSubtraÁ„o = '-'\nMultiplicaÁ„o = '*' \nDivis„o = '/'\nPorcentagem = '%%' \nExponencial = '^'\nLogaritmo = 'l'\nRaÌz quadrada = 'v'");
+		printf("\n\nDigite o primeiro n˙mero, a operaÁ„o e logo depois o segundo n˙mero\n\n");	
 		scanf("%f %c %f", &n1, &operador, &n2);
 		switch(operador){
 			
 		}
 	
-			printf("\nSe deseja continuar na calculadora digite 0\nSe n√£o qualquer n√∫mero:\n");
+			printf("\nSe deseja continuar na calculadora digite 0\nSe n„o qualquer n˙mero:\n");
     		fflush(stdin);
 			gets(saida);
 			if(strcmp(saida,zero)){
@@ -41,5 +41,5 @@ main(){
     		}
     	}
 	}
-}
+
 

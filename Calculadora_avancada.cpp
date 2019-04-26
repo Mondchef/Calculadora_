@@ -3,22 +3,16 @@
 #include<math.h>
 #include<stdlib.h>
 #include <string.h>
-float soma(float s1, float s2){
-	float resultado;
-	resultado = s1 + s2;
-	return resultado;
-}
 
-float raiz(float r1, float r2){
-	float resultado;
-	resultado = pow(r1, 1/r2);
-	return resultado;
-}
-float exponencial(float q1, float q2){
-	float resultado;
-	resultado = pow(q1,q2);
-	return resultado;
-}
+float calcula_log(double base, double rlog){
+	int a;
+	double cont;
+	for(cont=0, a=1; a<=rlog; cont++, a++){
+		a *= base;
+	}
+	return cont;
+	}
+	
 main(){
 	setlocale(LC_ALL,"portuguese");	
 	int saida1;
@@ -41,24 +35,11 @@ main(){
 		printf("\n\nDigite o primeiro número, a operação e logo depois o segundo número\n\n");	
 		scanf("%f %c %f", &n1, &operador, &n2);
 		switch(operador){
-				case '+':
-				r = soma(n1,n2);
-				printf("\n%.2f", r);
-				break;
 			
-				case 'v':
-    				r = raiz(n1,n2);
-    				printf("\n%.2f", r);
-    				break;
-    			case 'V':
-    				r = raiz(n1,n2);
-    				printf("\n%.2f", r);
-    				break;
-    				
-    			case '^':
-    				r = exponencial(n1,n2);
-    				printf("\n%.2f", r);
-    				break;
+				case 'l':
+    				log = calcula_log(n1, n2);
+    				printf("log(%.2lf)%.2lf = %.2lf", n1, n2, log);
+    				r = log;
 				
 		}
 	

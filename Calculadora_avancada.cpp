@@ -19,11 +19,20 @@ float exponencial(float q1, float q2){
 	resultado = pow(q1,q2);
 	return resultado;
 }
+float calcula_log(double base, double rlog){
+	int a;
+	double cont;
+	for(cont=0, a=1; a<=rlog; cont++, a++){
+		a *= base;
+	}
+	return cont;
+	}
+	
 main(){
 	setlocale(LC_ALL,"portuguese");	
 	int saida1;
 	char saida[50];
-	double log, a, base;
+	double a, base;
 	float n1,n2,r;
 	float x = 0;
 	int cont = 0;
@@ -53,6 +62,15 @@ main(){
     			case 'V':
     				r = raiz(n1,n2);
     				printf("\n%.2f", r);
+    				break;
+    			case 'l':
+    				r = calcula_log(n1, n2);
+    				printf("log(%.2lf)%.2lf = %.2lf", n1, n2, r);
+    				break;
+    				
+    			case 'L':
+    				r = calcula_log(n1, n2);
+    				printf("log(%.2lf)%.2lf = %.2lf", n1, n2, r);
     				break;
     				
     			case '^':
